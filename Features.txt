@@ -1,0 +1,23 @@
+Candidate Features for Comparison Metric:
+| Feature                                 | Category | How It Is Computed / Known                            | Biological Interpretation                             |
+| --------------------------------------- | -------- | ----------------------------------------------------- | ----------------------------------------------------- |
+| Clade / Bipartition Difference          | A        | RF-style split comparison                             | Gain or loss of evolutionary groupings                |
+| Generalized Split Similarity            | A        | Information-theoretic split matching (CID / MS-style) | Partial agreement between related clades              |
+| Relative Branch Length Difference       | A        | Branch score distance                                 | Differences in evolutionary rates or divergence times |
+| Absolute Path Length Difference         | A        | Patristic distance comparison                         | Changes in accumulated evolutionary distance          |
+| Node Ancestry Path Count                | A        | MRCA depth comparison                                 | Shifts in ancestry hierarchy                          |
+| Node Ancestry Path Length               | A        | Cophenetic distance                                   | Timing and ordering of divergence events              |
+| Pendant Branch Length Disparity         | A        | Tip-edge length comparison                            | Rate variation at terminal taxa                       |
+| Rearrangement Steps (Proxy)             | A        | Vectorized HOP distance (LTSv)                        | Localized topological rearrangements                  |
+| Maximum Agreement Subtree (MAST)        | A        | MAST size computation                                 | Extent of shared evolutionary history                 |
+| Statistical Support Disparity           | A        | Node support metadata comparison                      | Uncertainty in inferred relationships                 |
+| Outgroup Misplacement                   | B        | Explicit outgroup relocation                          | Rooting errors and ancestral misplacement             |
+| Polytomy Presence                       | B        | Edge contraction operations                           | Unresolved evolutionary relationships                 |
+| Rearrangement Operation Count           | B        | Recorded NNI / SPR / TBR operations                   | Magnitude of topological edits                        |
+| Reticulation                            | B        | Injected hybrid edges                                 | Non-tree-like evolutionary events                     |
+| Anomaly Zone Indicator                  | B        | Simulated short internodes                            | Gene tree–species tree discordance                    |
+| Branch Rate Heterogeneity               | C        | Rate variance in simulation                           | Heterogeneous evolutionary rates                      |
+| Site Rate Heterogeneity                 | C        | Gamma shape parameter (α)                             | Unequal substitution rates across sites               |
+| Incomplete Lineage Sorting (ILS) Signal | C        | Population size and internode length                  | Deep coalescence effects                              |
+| Homoplasy Level                         | C        | Mutation rate and state space                         | Convergent or parallel evolution                      |
+| Gene Tree Discordance                   | C        | Fraction of discordant gene trees                     | Conflict among evolutionary histories                 |
